@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Portfolio</title>
+<style>
+/* Basic reset */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+body {
+background-color: #f5f5f5;
+color: #140b5a;
+line-height: 1.6;
+}
+/* Header styles */
+header {
+background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('your-background-image.jpg') no-repeat center center/cover;
+color: white;
+padding: 80px 20px;
+text-align: center;
+}
+nav ul {
+list-style: none;
+padding: 0;
+}
+nav ul li {
+display: inline;
+margin: 0 15px;
+}
+nav ul li a {
+color: white;
+text-decoration: none;
+font-weight: bold;
+padding: 10px 20px;
+background-color: rgba(255, 255, 255, 0.1);
+border-radius: 5px;
+transition: background-color 0.3s, transform 0.3s;
+}
+nav ul li a:hover {
+background-color: rgba(110, 83, 83, 0.716);
+transform: scale(1.1);
+}
+h1 {
+font-size: 3em;
+margin-bottom: 10px;
+}
+/* Section styles */
+section {
+padding: 60px 20px;
+text-align: center;
+}
+section h2 {
+font-size: 2.5em;
+margin-bottom: 20px;
+color: #444;
+}
+/* About section */
+#about {
+background: #fff;
+padding-top: 40px;
+}
+#about img {
+border-radius: 70%;
+width: 250px;
+height: 250px;
+object-fit: cover;
+margin: 20px 0;
+border: 5px solid #fff;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+#about p {
+font-size: 1.1em;
+line-height: 1.6;
+max-width: 800px;
+margin: 20px auto;
+}
+/* Skills section */
+#skills {
+background: #f0f0f0;
+padding-top: 40px;
+}
+#skills .skills-list {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 15px;
+max-width: 1000px;
+margin: 0 auto;
+}
+#skills .skill-item {
+background: #fff;
+border-radius: 10px;
+padding: 20px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+width: calc(33.333% - 30px);
+margin: 15px;
+text-align: center;
+transition: transform 0.3s, box-shadow 0.3s;
+}
+#skills .skill-item:hover {
+transform: scale(1.05);
+box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+#skills .skill-item h3 {
+margin-bottom: 10px;
+font-size: 1.4em;
+}
+#skills .skill-item p {
+font-size: 1em;
+color: #666;
+}
+/* Portfolio section */
+#portfolio {
+background: #f9f9f9;
+padding-top: 40px;
+}
+.portfolio-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+gap: 20px;
+max-width: 1200px;
+margin: 0 auto;
+border-top: 1px solid #ddd;
+border-left: 1px solid #ddd;
+}
+.portfolio-item {
+background: #fff;
+border-right: 1px solid #ddd;
+border-bottom: 1px solid #ddd;
+overflow: hidden;
+transition: transform 0.3s, box-shadow 0.3s;
+}
+.portfolio-item:hover {
+transform: scale(1.02);
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.portfolio-item img {
+width: 100%;
+height: auto;
+display: block;
+}
+.portfolio-item-content {
+padding: 15px;
+text-align: left;
+}
+.portfolio-item h3 {
+margin-bottom: 10px;
+font-size: 1.4em;
+}
+.portfolio-item p {
+font-size: 0.95em;
+color: #666;
+}
+/* Contact section */
+#contact {
+background: #333;
+color: white;
+padding-bottom: 60px;
+padding-top: 40px;
+}
+#contact p {
+margin-bottom: 20px;
+}
+#contact a {
+color: #61dafb;
+text-decoration: none;
+font-weight: bold;
+}
+#contact a:hover {
+text-decoration: underline;
+}
+/* Footer styles */
+footer {
+background: #222;
+color: white;
+text-align: center;
+padding: 20px 0;
+}
+/* Responsive styles */
+@media (max-width: 768px) {
+header {
+padding: 60px 20px;
+}
+h1 {
+font-size: 2.5em;
+}
+nav ul li {
+margin: 0 10px;
+}
+.portfolio-item img {
+height: 150px;
+}
+#skills .skill-item {
+width: calc(50% - 30px);
+}
+}
+@media (max-width: 480px) {
+h1 {
+font-size: 2em;
+}
+.portfolio-item img {
+height: 100px;
+}
+#skills .skill-item {
+width: calc(100% - 30px);
+}
+}
+</style>
+</head>
+<body>
+<header>
+<nav>
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#portfolio">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+<h1>Hi I'm kanagaviswesh,Welcome to My Portfolio</h1>
+</header>
+<section id="about">
+<h2>About Me</h2>
+<img src="profile.png"alt="KANAGAVISWESH">
+<p>Hi! I'm Kanagaviswesh doing UG at karpagam college of engineering in the department of Artificial 
+intelligence and data science I work mainly in python and java,with strengths in python,Data structures and 
+algorithms additionly I have knowledge in web development,linux and databases</p>
+</section>
+<section id="skills">
+<h2>Skills & Technical Languages</h2>
+<div class="skills-list">
+<div class="skill-item">
+<h3>HTML & CSS</h3>
+<p>Expertise in creating responsive and accessible web designs using HTML5 and CSS3, including 
+frameworks like Bootstrap.</p>
+</div>
+<div class="skill-item">
+<h3>JavaScript & jQuery</h3>
+<p>Proficient in vanilla JavaScript and jQuery, with experience in developing interactive web elements 
+and dynamic content.</p>
+</div>
+<div class="skill-item">
+<h3>React & Angular</h3>
+<p>Skilled in building single-page applications with React and Angular, leveraging state management 
+and component-based architecture.</p>
+</div>
+<div class="skill-item">
+<h3>Python & Django</h3>
+<p>Strong knowledge of Python for backend development, with experience in Django for building 
+robust web applications.</p>
+</div>
+<div class="skill-item">
+<h3>Database Management</h3>
+<p>Experience with SQL and NoSQL databases, including MySQL, PostgreSQL, and MongoDB, for 
+efficient data storage and retrieval.</p>
+</div>
+<div class="skill-item">
+<h3>Version Control & DevOps</h3>
+<p>Proficient in Git for version control and familiar with CI/CD practices using Jenkins and Docker for
+streamlined development workflows.</p>
+</div>
+<!-- Add more skill items as needed -->
+</div>
+</section>
+<section id="portfolio">
+<h2>My Work</h2>
+<div class="portfolio-grid">
+<div class="portfolio-item">
+<div class="portfolio-item-content">
+<h3>MLOPS for Paris House Price Prediction</h3>
+<p>Implemented an MLOps system for house price prediction of Paris, it involves developing and 
+deploying a machine learning model to forecast real estate prices in Paris.<br>By leveraging advanced data 
+analytics and feature engineering, the model provides accurate predictions based on historical data and market 
+trends.<br>
+Resulted in heightened operational efficiency and improved predictive accuracy for house price 
+estimation.</p>
+</div>
+</div>
+<div class="portfolio-item">
+<div class="portfolio-item-content">
+<h3>AutoML Hotel Tips Prediction</h3>
+<p>Implemented an AutoML-based hotel tips prediction system to analyze hotel data and forecast tip 
+values, employing Python, H2O.ai AutoML, Scikit-learn, and Docker for model deployment.<br>
+Developed an AutoML solution for predicting personalized hotel tips, leveraging automated 
+machine learning to analyze guest reviews and preferences.<br>
+Streamlined model selection and hyperparameter tuning processes, resulting in actionable insights 
+that enhance guest experiences and operational efficiency.<br>
+Implemented data-driven recommendations to improve customer satisfaction with minimal manual 
+intervention.</p>
+</div>
+</div>
+<div class="portfolio-item">
+<div class="portfolio-item-content">
+<h3>E-Resume builder</h3>
+<p>Developed the "E-Resume builder" project, which utilizing TypeScript and JavaScript for a 
+responsive and interactive user interface.<br>
+The tool automates formatting and customization, allowing users to generate polished resumes 
+quickly.<br>
+Integrated features include customizable templates, real-time editing, and export options in 
+multiple formats. Enhanced user experience with a streamlined process that ensures a professional, tailored 
+resume with minimal effort.</p>
+</div>
+</div>
+<!-- Add more projects as needed -->
+</div>
+</section>
+<section id="contact">
+<h2>Contact Me</h2>
+<p>Feel free to reach out to me via <a href="mailto:kanagaviswesh.g2004@gmail.com">email</a> or 
+connect with me on <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" target="_blank">LinkedIn</a>.</p>
+</section>
+<footer>
+<p>&copy; 2024 Kanagaviswesh G. All rights reserved.</p>
+</footer>
+</body>
+</html>
